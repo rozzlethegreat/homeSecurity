@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Health and Security Sound System</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+	<div id="slide">
+			<ul>
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="fire.html">Fire Alarm</a></li>
+				<li><a href="light.html">Lights Control</a></li>
+				<li><a href="camera.html">Camera Access</a></li>
+				<li><a href="speaker.html">Audio Settings</a></li>
+				<li><a href="bills.html">Bills</a></li>
+				<li><a href="blinds.html">Blinds Control</a></li>
+				<li><a href="burglar.html">Burglar Alarm</a></li>
+				<li><a href="television.html">Television Control</a></li>
+				<li><a href="temp.html">Temperature</a></li>
+				<li><a href="wifi.html">Wifi Settings</a></li>
+				<li><a href="settings.html">Settings</a></li>
+			</ul>
+		</div>
+		<div id="burger-container">
+			<div id="burger">
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+			</div>
+		</div>
+		<div class="header">
+			<button onclick="goBack()"><img src="images/back.svg" width="40px" class="svg header-back"></button>
+			<a href="homepage.html"><img src="images/home.svg" width="40px" class="svg header-home"></a>
+			<h1 class="text header-title">Sound System / Punaha Sound</h1>
+		</div>
+		<div class="dummy-element"></div>
+		<div id="content-container">
+			<div id="audio-one">
+				<p class="text small-text float-left">Sound System</p>
+				<label class="switch">
+					<input type="checkbox" for="system-switch-dot" class="toggleSwitch">
+					<div class="slider round"></div>
+				</label>
+			</div>
+			<div id="audio-two">
+				<img src="images/houseplan.png" alt="house-plan" width="500px" class="float-left">
+				<label class="shape-portrait system-dot-position">
+					<input type="checkbox" for="system-switch-dot" class="toggleSwitch">
+					<div class="change-colour dot-round"></div>
+				</label>
+				<label class="dot speaker-dot-position-one">
+					<input type="checkbox" for="speaker-switch-dot-one" class="toggleSwitch">
+					<div class="change-colour dot-round"></div>
+				</label>
+				<label class="dot speaker-dot-position-two">
+					<input type="checkbox" for="speaker-switch-dot-two" class="toggleSwitch">
+					<div class="change-colour dot-round"></div>
+				</label>
+				<label class="dot speaker-dot-position-three">
+					<input type="checkbox" for="speaker-switch-dot-three" class="toggleSwitch">
+					<div class="change-colour dot-round"></div>
+				</label>
+				<label class="dot speaker-dot-position-four">
+					<input type="checkbox" for="speaker-switch-dot-four" class="toggleSwitch">
+					<div class="change-colour dot-round"></div>
+				</label>
+				<label class="dot speaker-dot-position-five">
+					<input type="checkbox" for="speaker-switch-dot-five" class="toggleSwitch">
+					<div class="change-colour dot-round"></div>
+				</label>
+			</div>
+			<div class="float-left" id="audio-three">
+				<div>
+					<p class="text small-text float-left">Speaker 1</p>
+					<label class="switch">
+						<input type="checkbox" for="speaker-switch-dot-one" class="toggleSwitch">
+						<div class="slider round"></div>
+					</label>
+				</div>	
+				<div>
+					<p class="text small-text float-left">Speaker 2</p>
+					<label class="switch">
+						<input type="checkbox" for="speaker-switch-dot-two" class="toggleSwitch">
+						<div class="slider round"></div>
+					</label>
+				</div>
+				<div>
+					<p class="text small-text float-left">Speaker 3</p>
+					<label class="switch">
+						<input type="checkbox" for="speaker-switch-dot-three" class="toggleSwitch">
+						<div class="slider round"></div>
+					</label>
+				</div>
+				<div>
+					<p class="text small-text float-left">Speaker 4</p>
+					<label class="switch">
+						<input type="checkbox" for="speaker-switch-dot-four" class="toggleSwitch">
+						<div class="slider round"></div>
+					</label>
+				</div>
+				<div>
+					<p class="text small-text float-left">Speaker 5</p>
+					<label class="switch">
+						<input type="checkbox" for="speaker-switch-dot-five" class="toggleSwitch">
+						<div class="slider round"></div>
+					</label>
+				</div>
+			</div>
+			<div id="audio-four">
+				<p class="text medium-text">Select from:</p>
+				<ul class="list-margin">
+					<li><a href="#" class="text small-text" id="https://www.youtube.com/?gl=NZ">Youtube</a></li>
+					<li><a href="#" class="text small-text" id="https://www.spotify.com/nz/">Spotify</a></li>
+					<li><a href="#" class="text small-text" id="">iTunes</a></li>
+					<li><a href="#" class="text small-text" id="https://soundcloud.com/stream">Soundcloud</a></li>
+				</ul>
+				<a href="#" class="button text small-text" id="myBtn">Add Source...</a>
+				<div id="input-popup" class="popup-input">
+					<div class="popup-input-content">
+						<div class="popup-header">
+							<h2 class="text">Add Audio Source</h2>
+						</div>
+						<div class="popup-body text small-text">
+							<p class="float-left">Please Enter Source Name</p>
+							<input type="text" class="input-popup" name="audiosource">
+						</div>
+						<div class="modal-footer">
+							<div class="submit-button-bar">
+								<span class="text submit">Cancel</span>
+								<span class="text submit ok">Search</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="text medium-text">Me te wai korari</footer>
+		</div>
+		<script type="text/javascript">
+		if (localStorage.getItem("switches") !== null) {
+			var Storage = JSON.parse(localStorage.getItem("switches"));
+			for (var i = 0; i < Storage.length; i++) {
+				if(Storage[i]['active'] === 'true' ){
+					var SwitchFor = Storage[i]['switch'];
+					var AllInputs = document.querySelectorAll("[for='" + SwitchFor + "']");
+					if(AllInputs !== null){
+						for(var j = 0; j < AllInputs.length; j++){
+							AllInputs[j].checked = true;
+						}
+					}
+				}
+			};
+		}
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="js/ToggleSwitch.js"></script>
+	</body>
+</html>

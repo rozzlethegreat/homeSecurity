@@ -1,0 +1,1448 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+body {
+  margin: 20px; }
+
+html {
+  background: url(../images/honeycomb.png) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+footer {
+  position: fixed;
+  text-align: left;
+  bottom: 15px;
+  left: 35px;
+  color: #696969;
+  font-style: italic; }
+
+.header {
+  background-color: #F8F8F8;
+  border: 3px solid #d9f2d9;
+  height: 75px;
+  position: fixed;
+  left: 30px;
+  right: 30px;
+  top: 30px; }
+
+.dummy-element {
+  height: 100px; }
+
+.header-back {
+  position: fixed;
+  top: 35px;
+  left: 40px; }
+
+.header-home {
+  position: fixed;
+  top: 35px;
+  left: 115px; }
+
+.header-title {
+  position: fixed;
+  top: 50px;
+  left: 200px; }
+
+h1 {
+  font-weight: 100; }
+
+.container {
+  width: 100%; }
+
+.icon-buttons {
+  max-width: 1600px;
+  margin: 0 auto; }
+  .icon-buttons ::after {
+    content: ' ';
+    display: block;
+    clear: both; }
+
+#content-container {
+  margin-top: 20px;
+  margin-left: 20px; }
+
+#logo {
+  margin-left: 10px; }
+
+.english {
+  margin-top: 45px; }
+
+.text {
+  font-size: 25px;
+  font-family: 'geneva'; }
+
+.hometext {
+  font-size: 25px;
+  font-family: 'geneva'; }
+
+.small-text {
+  font-size: 1em; }
+
+.medium-text {
+  font-size: 1.3em; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.all-boxes {
+  float: left;
+  width: 250px;
+  height: 250px;
+  background: #F8F8F8;
+  border: 3px solid #d9f2d9;
+  margin: 20px;
+  text-align: center; }
+
+.all-boxes-bills {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background: #d9f2d9;
+  margin: 20px;
+  text-align: center; }
+
+.svg {
+  margin: 10px; }
+  .svg :hover {
+    cursor: pointer;
+    opacity: 0.5; }
+
+.button {
+  padding: 2px 10px 2px 10px;
+  color: white;
+  background-color: #267326; }
+
+.option-right-align {
+  margin-right: 20px; }
+
+.list-margin {
+  margin: 10px 0px 10px 10px; }
+
+.add-margin {
+  margin-bottom: 20px;
+  margin-top: 10px; }
+
+/*NAV BAR*/
+#slide {
+  display: none;
+  height: 100%;
+  width: 200px;
+  opacity: 0.9;
+  z-index: 20;
+  background-color: white;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  -webkit-transition: width 2s;
+  transition: width 2s; }
+  #slide li {
+    font-size: 20px;
+    margin: 50px 0 0 10px;
+    line-height: 0px;
+    text-align: left; }
+    #slide li a {
+      color: black;
+      font-family: 'geneva';
+      font-weight: bold; }
+      #slide li a :hover {
+        font-weight: bold; }
+
+#burger-container {
+  width: 30px;
+  z-index: 21;
+  position: fixed;
+  right: 18px;
+  top: 30px; }
+
+#burger {
+  display: block; }
+  #burger span {
+    background: black;
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+    transition: all ease-in-out 0.4s;
+    position: relative;
+    top: 25px;
+    left: -45px; }
+  #burger :hover {
+    cursor: pointer;
+    opacity: 0.5; }
+
+#burger-container.open span:nth-child(2) {
+  width: 0;
+  opacity: 0; }
+
+#burger-container.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 32px; }
+
+#burger-container.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 12px; }
+
+/*SELECT*/
+.styled-select {
+  width: 140px;
+  height: 34px;
+  overflow: hidden;
+  border: 1px solid #ccc; }
+  .styled-select select {
+    background: transparent;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none; }
+
+/*BLINDS PAGE*/
+#blinds-two {
+  margin-top: 30px; }
+
+/*SOUND SYSTEM PAGE*/
+#audio-one {
+  margin: 20px; }
+
+#audio-two {
+  margin-top: 20px; }
+
+#audio-three {
+  margin: 0 60px 30px 20px; }
+
+/*FIRE ALARM PAGE*/
+#fire-two {
+  margin-left: 550px; }
+
+#fire-three {
+  margin-top: 50px;
+  margin-left: 550px; }
+
+#fire-four {
+  margin-top: 140px;
+  margin-left: 550px; }
+
+.fire-text {
+  margin: 20px 0px 0px 20px; }
+
+/*BURGLAR ALARM PAGE*/
+#burglar-two {
+  margin: 120px 0px 0px 20px; }
+
+#burglar-alarm-three {
+  margin: 120px 0px 0px 120px; }
+
+#burglar-alarm-four {
+  margin-top: 90px; }
+
+.button-margin {
+  margin-left: 50px; }
+
+/*TELEVISION PAGE*/
+.tv-bedroom {
+  margin-left: 40px; }
+
+#tv-one {
+  margin-left: 550px; }
+
+/*TEMP PAGE*/
+.temp-one {
+  margin: 30px 0 40px 550px; }
+
+.temp-lounge {
+  margin-left: 550px; }
+
+.temp-kitchen {
+  margin-left: 550px; }
+
+.temp-two {
+  margin: 20px 0 0 50px; }
+
+/*WIFI PAGE*/
+#wifi-one {
+  margin-top: 30px; }
+
+#wifi-two {
+  margin-top: 80px; }
+
+#wifi-three {
+  margin-left: 60px; }
+
+#wifi-four {
+  margin: 120px 0px 0px 30px; }
+
+#wifi-five {
+  margin-top: 80px; }
+
+/*LIGHTS CONTROL*/
+#lights-two {
+  margin-top: 30px;
+  width: 50%; }
+
+/*BILLS PAGE*/
+#bills-one {
+  margin-top: 50px; }
+
+#bills-two {
+  margin-top: 50px; }
+
+.pay-bills {
+  padding-top: 200px; }
+
+.bills-text {
+  margin-top: 55px; }
+
+.first-box-bills {
+  margin-left: 40px; }
+
+/*CAMERAS PAGE*/
+.footage {
+  margin-top: 20px; }
+
+.footage-three {
+  margin-right: 6px;
+  margin-top: 6px; }
+
+.margin-left {
+  margin-left: 30px; }
+
+/*SETTINGS PAGE*/
+#settings-one {
+  margin-top: 60px; }
+
+.settings-example-image {
+  margin-left: 200px; }
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1099px) and (min-width: 699px) {
+  .container {
+    width: 100%; }
+
+  .iconButtons {
+    max-width: 1024px;
+    margin: 0 auto; }
+    .iconButtons ::after {
+      content: ' ';
+      display: block;
+      clear: both; }
+
+  .text {
+    font-size: 1.5em; }
+
+  .small-text {
+    font-size: 1.2em; }
+
+  .switch {
+    width: 70px !important;
+    height: 35px !important;
+    margin-left: 30px !important; }
+
+  .slider:before {
+    height: 27px !important;
+    width: 27px !important;
+    left: 10px !important;
+    bottom: 4px !important; }
+
+  #slide {
+    width: 325px; }
+    #slide li {
+      font-size: 30px;
+      line-height: 20px; }
+
+  #fire-three {
+    margin-top: 150px;
+    margin-left: 0px;
+    float: left;
+    margin-right: 300px; }
+
+  #fire-four {
+    float: left;
+    margin-left: 0px;
+    margin-top: 20px; }
+
+  .footage {
+    margin-bottom: 90px; }
+
+  #audio-three {
+    margin: 100px 250px 0 0; }
+
+  #audio-four {
+    margin-top: 390px; }
+
+  #lights-two {
+    margin-top: 140px; }
+
+  #blinds-two {
+    margin-top: 150px;
+    margin-right: 200px; }
+
+  #burglar-alarm-three {
+    margin-right: 350px;
+    margin-left: 0; }
+
+  #tv-one {
+    display: inline-block;
+    margin-left: 0; }
+
+  #tv-three {
+    display: inline-block; }
+
+  #tv-two {
+    margin-top: 80px; }
+
+  .temp-three {
+    margin-top: 400px; }
+
+  .temp-one {
+    margin-left: 45px; }
+
+  .temp-lounge {
+    margin-left: 45px; }
+
+  .temp-kitchen {
+    margin-left: 45px; }
+
+  #wifi-four {
+    margin-top: 80px; }
+
+  #wifi-three {
+    margin-right: 50px; }
+
+  #wifi-two {
+    margin-bottom: 30px; }
+
+  .popup-input-content {
+    width: 60% !important; } }
+/*POP-UP*/
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  .popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px; }
+    .popup .popuptext ::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent; }
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+/* The Modal (background) */
+.popup-input {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 300px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content */
+.popup-input-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 3px solid #888;
+  width: 450px;
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);*/
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s; }
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+
+  to {
+    top: 0;
+    opacity: 1; } }
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+
+  to {
+    top: 0;
+    opacity: 1; } }
+/* The Submit Button */
+.submit {
+  color: white;
+  display: inline-block;
+  font-weight: bold; }
+  .submit :hover, .submit :focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer; }
+
+.submit-button-bar {
+  display: block; }
+
+.ok {
+  margin-left: 80px; }
+
+.popup-header {
+  padding: 10px 12px;
+  background-color: #267326;
+  color: white; }
+
+.popup-body {
+  padding: 40px 16px; }
+
+.modal-footer {
+  padding: 20px 12px;
+  background-color: #267326;
+  color: white; }
+
+.input-popup {
+  float: right;
+  border: 2px solid #ccc; }
+
+/*TV REMOTES BUTTONS*/
+#apple-remote {
+  background-image: url("../images/remotes/apple-tv.png");
+  height: 512px;
+  width: 229px;
+  position: relative;
+  background-repeat: no-repeat;
+  float: left;
+  margin-top: 70px; }
+
+#apple-remote-menu a {
+  left: 60px;
+  top: 158px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/remotes/apple-menu.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #apple-remote-menu a:hover {
+    background-position: 0 -50px; }
+
+#apple-remote-enter a {
+  left: 125px;
+  top: 158px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/remotes/apple-comp.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #apple-remote-enter a:hover {
+    background-position: 0 -50px; }
+
+#apple-remote-plus a {
+  left: 125px;
+  top: 222px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/remotes/apple-plus.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #apple-remote-plus a:hover {
+    background-position: 0 -50px; }
+
+#apple-remote-minus a {
+  left: 125px;
+  top: 285px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/remotes/apple-minus.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #apple-remote-minus a:hover {
+    background-position: 0 -50px; }
+
+#apple-remote-speaker a {
+  left: 60px;
+  top: 222px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/remotes/apple-speaker.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #apple-remote-speaker a:hover {
+    background-position: 0 -50px; }
+
+#apple-remote-play-pause a {
+  left: 60px;
+  top: 285px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/remotes/apple-play-pause.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #apple-remote-play-pause a:hover {
+    background-position: 0 -50px; }
+
+#tv-remote {
+  background-image: url("../images/remotes/sky.png");
+  height: 572px;
+  width: 229px;
+  position: relative;
+  float: left; }
+
+#tv-remote-power a {
+  left: 86px;
+  top: 41px;
+  width: 50px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-power-button.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-power a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-tv a {
+  left: 50px;
+  top: 63px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-tv.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-tv a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-stb a {
+  left: 102px;
+  top: 63px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-stb.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-stb a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-aux a {
+  left: 154px;
+  top: 63px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-aux.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-aux a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-mute a {
+  left: 85px;
+  top: 363px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-mute.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-mute a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-last a {
+  left: 119px;
+  top: 363px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-last.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-last a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-ok a {
+  left: 102px;
+  top: 246px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-ok.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-ok a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-options a {
+  left: 58px;
+  top: 208px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-oieb.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-options a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-info a {
+  left: 145px;
+  top: 208px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-oieb.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-info a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-exit a {
+  left: 148px;
+  top: 286px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-oieb.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-exit a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-back a {
+  left: 58px;
+  top: 286px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-oieb.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-back a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-blue a {
+  left: 145px;
+  top: 161px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-blue.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-blue a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-red a {
+  left: 61px;
+  top: 161px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-red.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-red a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-yellow a {
+  left: 116px;
+  top: 161px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-yellow.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-yellow a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-green a {
+  left: 88px;
+  top: 161px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-green.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-green a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-channel-plus a {
+  left: 149px;
+  top: 314px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-tv-channel-plus.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-channel-plus a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-channel-minus a {
+  left: 142px;
+  top: 349px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-tv-channel-minus.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-channel-minus a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-volume-plus a {
+  left: 55px;
+  top: 315px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-tv-volume-plus.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-volume-plus a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-volume-minus a {
+  left: 62px;
+  top: 349px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-tv-volume-minus.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-volume-minus a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-stop a {
+  left: 62px;
+  top: 126px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-stop.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-stop a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-play a {
+  left: 89px;
+  top: 126px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-play.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-play a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-pause a {
+  left: 115px;
+  top: 126px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-pause.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-pause a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-rec a {
+  left: 145px;
+  top: 126px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-rec.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-rec a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-replay a {
+  left: 45px;
+  top: 98px;
+  width: 26px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-replay.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-replay a:hover {
+    background-position: 0 -18px; }
+
+#tv-remote-skip a {
+  left: 153px;
+  top: 98px;
+  width: 26px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-skip.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-skip a:hover {
+    background-position: 0 -18px; }
+
+#tv-remote-rewind a {
+  left: 81px;
+  top: 93px;
+  width: 26px;
+  height: 16px;
+  background-image: url("../images/remotes/sky-rewind.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-rewind a:hover {
+    background-position: 0 -16px; }
+
+#tv-remote-forward a {
+  left: 118px;
+  top: 92px;
+  width: 26px;
+  height: 16px;
+  background-image: url("../images/remotes/sky-fast-forward.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-forward a:hover {
+    background-position: 0 -16px; }
+
+#tv-remote-guide a {
+  left: 92px;
+  top: 319px;
+  width: 40px;
+  height: 22px;
+  background-image: url("../images/remotes/sky-guide.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-guide a:hover {
+    background-position: 0 -23px; }
+
+#tv-remote-menu a {
+  left: 92px;
+  top: 188px;
+  width: 40px;
+  height: 22px;
+  background-image: url("../images/remotes/sky-menu.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-menu a:hover {
+    background-position: 0 -23px; }
+
+#tv-remote-left a {
+  left: 72px;
+  top: 232px;
+  width: 20px;
+  height: 47px;
+  background-image: url("../images/remotes/sky-left.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-left a:hover {
+    background-position: -20px 0; }
+
+#tv-remote-right a {
+  left: 131px;
+  top: 232px;
+  width: 20px;
+  height: 47px;
+  background-image: url("../images/remotes/sky-right.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-right a:hover {
+    background-position: -20px 0; }
+
+#tv-remote-down a {
+  left: 89px;
+  top: 275px;
+  width: 46px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-down.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-down a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-up a {
+  left: 89px;
+  top: 217px;
+  width: 46px;
+  height: 20px;
+  background-image: url("../images/remotes/sky-up.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-up a:hover {
+    background-position: 0 -20px; }
+
+#tv-remote-one a {
+  left: 61px;
+  top: 396px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-one.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-one a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-four a {
+  left: 63px;
+  top: 423px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-four.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-four a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-seven a {
+  left: 68px;
+  top: 451px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-seven.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-seven a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-asterisk a {
+  left: 70px;
+  top: 478px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-asterisk.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-asterisk a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-cc a {
+  left: 133px;
+  top: 478px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-cc.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-cc a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-six a {
+  left: 140px;
+  top: 423px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-six.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-six a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-three a {
+  left: 143px;
+  top: 397px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-three.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-three a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-nine a {
+  left: 138px;
+  top: 450px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-nine.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-nine a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-zero a {
+  left: 102px;
+  top: 478px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-zero.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-zero a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-eight a {
+  left: 102px;
+  top: 450px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-eight.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-eight a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-five a {
+  left: 102px;
+  top: 423px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-five.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-five a:hover {
+    background-position: 0 -19px; }
+
+#tv-remote-two a {
+  left: 102px;
+  top: 397px;
+  width: 21px;
+  height: 18px;
+  background-image: url("../images/remotes/sky-two.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block; }
+  #tv-remote-two a:hover {
+    background-position: 0 -19px; }
+
+/*TOGGLE SWITCH*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  width: 50px;
+  height: 25px;
+  margin-left: 20px; }
+  .switch input {
+    display: none; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s; }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s; }
+
+input:checked + .slider {
+  background-color: #267326; }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3; }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px); }
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px; }
+
+.slider.round:before {
+  border-radius: 50%; }
+
+/*DOTS ON FLOOR PLAN*/
+.dot {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px; }
+  .dot input {
+    display: none; }
+
+/* The slider */
+.change-colour {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  /* gives grey background*/
+  -webkit-transition: .4s;
+  transition: .4s; }
+  .change-colour:before {
+    position: absolute;
+    content: "";
+    -webkit-transition: .4s;
+    transition: .4s; }
+
+/* The slider */
+.no-change-colour {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #267326;
+  /* gives grey background*/
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+input:checked + .change-colour {
+  background-color: #267326; }
+
+/*input:focus + .change-colour{ box-shadow: 0 0 1px #2196F3; }*/
+/*input:checked + .change-colour:before{
+-webkit-transform: translateX(23px);
+-ms-transform: translateX(23px);
+	transform: translateX(23px);
+}
+*/
+/* Rounded sliders */
+.change-colour.dot-round {
+  border-radius: 34px; }
+  .change-colour.dot-round:before {
+    border-radius: 50%; }
+
+/*DOTS POSITION LIGHTS*/
+.lights-dot-position-one {
+  top: -200px;
+  left: -440px; }
+
+.lights-dot-position-two {
+  top: -110px;
+  left: -460px; }
+
+.lights-dot-position-three {
+  top: -200px;
+  left: -405px; }
+
+.lights-dot-position-four {
+  top: -110px;
+  left: -425px; }
+
+.lights-dot-position-five {
+  top: -230px;
+  left: -165px; }
+
+.lights-dot-position-six {
+  top: -70px;
+  left: -345px; }
+
+.lights-dot-position-seven {
+  top: -85px;
+  left: -210px; }
+
+.lights-dot-position-eight {
+  top: -190px;
+  left: -385px; }
+
+.lights-dot-position-nine {
+  top: -285px;
+  left: -460px; }
+
+.lights-dot-position-ten {
+  top: -255px;
+  left: -375px; }
+
+/*DOTS POSITION FIRE*/
+.fire-dot-position-one {
+  top: 240px;
+  left: -35px; }
+
+.fire-dot-position-two {
+  top: 180px;
+  left: -415px; }
+
+/*BLINDS POSITION AND SHAPE*/
+.blinds-shape {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 15px; }
+  .blinds-shape input {
+    display: none; }
+
+.shape-portrait {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 40px; }
+  .shape-portrait input {
+    display: none; }
+
+.blinds-dot-position-one {
+  top: -180px;
+  left: -496px; }
+
+.blinds-dot-position-two {
+  top: -100px;
+  left: -514px; }
+
+.blinds-dot-position-three {
+  top: -8px;
+  left: -305px; }
+
+.blinds-dot-position-four {
+  top: -8px;
+  left: -180px; }
+
+.blinds-dot-position-five {
+  top: -297px;
+  left: -230px; }
+
+/*DOTS POSITION SPEAKER*/
+.system-dot-position {
+  top: 175px;
+  left: -318px; }
+
+.speaker-dot-position-one {
+  top: 235px;
+  left: -500px; }
+
+.speaker-dot-position-two {
+  top: 75px;
+  left: -520px; }
+
+.speaker-dot-position-three {
+  top: 188px;
+  left: -92px; }
+
+.speaker-dot-position-four {
+  top: 18px;
+  left: -115px; }
+
+.speaker-dot-position-five {
+  top: 168px;
+  left: -295px; }
+
+/*DOTS POSITION CAMERA*/
+.camera-dot-position-one {
+  top: -250px;
+  left: -365px; }
+
+.camera-dot-position-two {
+  top: -52px;
+  left: -340px; }
+
+.camera-dot-position-three {
+  top: -295px;
+  left: -63px; }
+
+/*DOTS POSITION MODEM*/
+.modem-dot-position {
+  top: -180px;
+  left: -147px; }
+
+/*DOTS POSITION BURGLAR*/
+.burglar-dot-position {
+  top: 315px;
+  left: -185px; }
+
+/*DOTS POSITION TV*/
+.tv-dot-position-one {
+  top: 160px;
+  left: -37px; }
+
+.tv-dot-position-two {
+  top: 205px;
+  left: -500px; }
+
+/*DOTS POSITION TEMP*/
+.temp-dot-position-one {
+  top: 165px;
+  left: -480px; }
+
+.temp-dot-position-two {
+  top: 210px;
+  left: -162px; }

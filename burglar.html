@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Health and Security Burglar Alarm</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+		<div id="slide">
+			<ul>
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="fire.html">Fire Alarm</a></li>
+				<li><a href="light.html">Lights Control</a></li>
+				<li><a href="camera.html">Camera Access</a></li>
+				<li><a href="speaker.html">Audio Settings</a></li>
+				<li><a href="bills.html">Bills</a></li>
+				<li><a href="blinds.html">Blinds Control</a></li>
+				<li><a href="burglar.html">Burglar Alarm</a></li>
+				<li><a href="television.html">Television Control</a></li>
+				<li><a href="temp.html">Temperature</a></li>
+				<li><a href="wifi.html">Wifi Settings</a></li>
+				<li><a href="settings.html">Settings</a></li>
+			</ul>
+		</div>
+		<div id="burger-container">
+			<div id="burger">
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+			</div>
+		</div>
+		<div class="header">
+			<button onclick="goBack()"><img src="images/back.svg" width="40px" class="svg header-back"></button>
+			<a href="homepage.html"><img src="images/home.svg" width="40px" class="svg header-home"></a>
+			<h1 class="text header-title">Burglar Alarm / Whakaoho Tahae</h1>
+		</div>
+		<div class="dummy-element"></div>
+		<div id="content-container">
+			<div id="burglar-alarm-one">
+				<img src="images/houseplan.png" alt="house-plan" width="500px" class="float-left"/>
+				<label class="dot burglar-dot-position">
+					<input type="checkbox" for="burglar-switch-dot" class="toggleSwitch">
+					<div class="change-colour dot-round"></div>
+				</label>
+			</div>
+			<div class="text small-text float-left" id="burglar-two">
+				<p class="medium-text">History:</p>
+				<ul class="list-margin">
+					<li>11th November 2016</li>
+					<li>8th March 2016</li>
+					<li>2nd January 2016</li>
+				</ul>
+				<div class="popup button" onclick="myFunction()">More...
+  					<span class="popuptext hometext" id="myPopup">20th July 2015</br>11th March 2015</br>16th October 2014</span>
+				</div>
+			</div>
+			<div id="burglar-alarm-three" class="float-left">
+				<div>
+					<p class="text small-text float-left">Alarm is ON</p>
+					<label class="switch">
+						<input type="checkbox" id="burglar-switch" for="burglar-switch-dot" class="toggleSwitch">
+						<div class="slider round"></div>
+					</label>
+				</div>
+				<div id="burglar-alarm-four" class="text small-text">
+					<p>Alarm Password:</p>
+					<p class="medium-text">* * * *</p>
+					<a href="#" class="button button-margin" id="myBtn">Change...</a>
+					<div id="input-popup" class="popup-input">
+  						<div class="popup-input-content">
+   							<div class="popup-header">
+    							<h2 class="hometext">Burglar Alarm Password Change</h2>
+    						</div>
+    						<div class="popup-body">
+   								<p class="float-left">Please Confirm Old Password</p>
+   								<input type="password" class="input-popup" maxlength="4" name="oldpassword"></br>
+    							<p class="float-left">Please Enter New Password</p>
+    							<input type="password" class="input-popup" maxlength="4" name="newpassword"></br>
+    							<p class="float-left">Please Confirm New Password</p>
+    							<input type="password" class="input-popup" maxlength="4" name="confirmpassword"></br>
+    						</div>
+    						<div class="modal-footer">
+    							<div class="submit-button-bar">
+    								<span class="hometext submit">Cancel</span>
+    								<span class="hometext submit ok">OK</span>
+    							</div>
+    						</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<footer class="text medium-text">Me te wai korari</footer>
+		</div>
+
+		<script type="text/javascript">
+		if (localStorage.getItem("switches") !== null) {
+			var Storage = JSON.parse(localStorage.getItem("switches"));
+			for (var i = 0; i < Storage.length; i++) {
+				if(Storage[i]['active'] === 'true' ){
+					var SwitchFor = Storage[i]['switch'];
+					var AllInputs = document.querySelectorAll("[for='" + SwitchFor + "']");
+					if(AllInputs !== null){
+						for(var j = 0; j < AllInputs.length; j++){
+							AllInputs[j].checked = true;
+						}
+					}
+				}
+			};
+		}
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="js/ToggleSwitch.js"></script>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Health and Security Wifi Access</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+		<div id="slide">
+			<ul>
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="fire.html">Fire Alarm</a></li>
+				<li><a href="light.html">Lights Control</a></li>
+				<li><a href="camera.html">Camera Access</a></li>
+				<li><a href="speaker.html">Audio Settings</a></li>
+				<li><a href="bills.html">Bills</a></li>
+				<li><a href="blinds.html">Blinds Control</a></li>
+				<li><a href="burglar.html">Burglar Alarm</a></li>
+				<li><a href="television.html">Television Control</a></li>
+				<li><a href="temp.html">Temperature</a></li>
+				<li><a href="wifi.html">Wifi Settings</a></li>
+				<li><a href="settings.html">Settings</a></li>
+			</ul>
+		</div>
+		<div id="burger-container">
+			<div id="burger">
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+			</div>
+		</div>
+
+		<div class="header">
+			<button onclick="goBack()"><img src="images/back.svg" width="40px" class="svg header-back"></button>
+			<a href="homepage.html"><img src="images/home.svg" width="40px" class="svg header-home"></a>
+			<h1 class="text header-title">Wifi / Ipurangi Ahokore</h1>
+		</div>
+
+
+		<div class="dummy-element"></div>
+		<div id="content-container">
+			<div class="float-left text" id="wifi-one">
+				<p class="add-margin small-text">Modem: Hmddhskk888</p>
+				<a href="#" class="button" id="myBtn">Change Password</a>
+					<div id="input-popup" class="popup-input">
+  						<div class="popup-input-content">
+   							<div class="popup-header">
+    							<h2 class="text">Wifi Alarm Password Change</h2>
+    						</div>
+    						<div class="popup-body">
+   								<p class="float-left">Please Confirm Old Password</p>
+   								<input type="password" class="input-popup" name="oldpassword"></br>
+    							<p class="float-left">Please Enter New Password</p>
+    							<input type="password" class="input-popup"  name="newpassword"></br>
+    							<p class="float-left">Please Confirm New Password</p>
+    							<input type="password" class="input-popup"  name="confirmpassword"></br>
+    						</div>
+    						<div class="modal-footer">
+    							<span class="text submit">Cancel</span>
+    							<span class="text submit ok">OK</span>
+    						</div>
+						</div>
+					</div>
+				<p class="small-text text add-margin">Wifi Strength: Very Strong</p>
+				<p class="small-text text" id="wifi-two">$82.99 last fortnight</p>
+			</div>
+			<div class="float-left" id="wifi-three">
+				<img src="images/houseplan.png" alt="house-plan" width="500px">
+				<label class="dot modem-dot-position">
+					<input type="checkbox" for="modem-switch-dot" class="toggleSwitch"">
+					<div class="change-colour dot-round"></div>
+				</label>
+			</div>
+			<div id="wifi-four" class="float-left">
+				<p class="text small-text float-left">Modem is ON</p>
+				<label class="switch">
+					<input type="checkbox" for="modem-switch-dot" class="toggleSwitch">
+					<div class="slider round"></div>
+				</label>
+				<div id="wifi-five">
+					<a href="#" class="button text small-text">Restart Modem</a>
+				</div>
+			</div>
+			<footer class="text medium-text">Me te wai korari</footer>
+		</div>
+		<script type="text/javascript">
+		if (localStorage.getItem("switches") !== null) {
+			var Storage = JSON.parse(localStorage.getItem("switches"));
+			for (var i = 0; i < Storage.length; i++) {
+				if(Storage[i]['active'] === 'true' ){
+					var SwitchFor = Storage[i]['switch'];
+					var AllInputs = document.querySelectorAll("[for='" + SwitchFor + "']");
+					if(AllInputs !== null){
+						for(var j = 0; j < AllInputs.length; j++){
+							AllInputs[j].checked = true;
+						}
+					}
+				}
+			};
+		}
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="js/ToggleSwitch.js"></script>
+	</body>
+</html>

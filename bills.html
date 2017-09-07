@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Health and Security Bills</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+
+	<div id="slide">
+			<ul>
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="fire.html">Fire Alarm</a></li>
+				<li><a href="light.html">Lights Control</a></li>
+				<li><a href="camera.html">Camera Access</a></li>
+				<li><a href="speaker.html">Audio Settings</a></li>
+				<li><a href="bills.html">Bills</a></li>
+				<li><a href="blinds.html">Blinds Control</a></li>
+				<li><a href="burglar.html">Burglar Alarm</a></li>
+				<li><a href="television.html">Television Control</a></li>
+				<li><a href="temp.html">Temperature</a></li>
+				<li><a href="wifi.html">Wifi Settings</a></li>
+				<li><a href="settings.html">Settings</a></li>
+			</ul>
+		</div>
+		<div id="burger-container">
+			<div id="burger">
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+			</div>
+		</div>
+		<div class="header">
+			<button onclick="goBack()"><img src="images/back.svg" width="40px" class="svg header-back"></button>
+			<a href="homepage.html"><img src="images/home.svg" width="40px" class="svg header-home"></a>
+			<h1 class="text header-title">Bills / Pire</h1>
+		</div>
+		<div class="dummy-element"></div>
+		<div id="content-container">
+			<div class="bills-text">
+				<p class="small-text text">Bills To Pay:</p>
+			</div>
+			<div id="bills-one">
+				<div class="all-boxes-bills first-box-bills float-left">
+					<p class="medium-text bills-text text">Electricity </br>$82.31</p>
+				</div>
+				<div class="all-boxes-bills float-left">
+					<p class="medium-text bills-text text">Gas </br>$43.38</p>
+				</div>
+				<div class="all-boxes-bills float-left">
+					<p class="medium-text bills-text text">Power </br>$22.61</p>
+				</div>
+				<div class="pay-bills">
+					<a href="#" class="button text small-text" id="myBtn">Pay Bills</a>
+					<div id="input-popup" class="popup-input">
+  						<div class="popup-input-content">
+   							<div class="popup-header">
+    							<h2 class="text">Pay Bills Online</h2>
+    						</div>
+    						<div class="popup-body small-text text">
+   								<p>Card Ending: ****-****-****-4778</p></br>
+    							<p>Pay a Total of: $148.30</p>
+    						</div>
+    						<div class="modal-footer">
+    							<span class="text submit">Cancel</span>
+    							<span class="text submit ok">OK</span>
+    						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bills-text">
+				<p class="small-text text">Upcoming Bills:</p>
+			</div>
+			<div id="bills-two">
+				<div class="all-boxes-bills float-left">
+					<p class="medium-text bills-text text">Rent </br>$284.99</p>
+				</div>
+				<div class="all-boxes-bills float-left">
+					<p class="medium-text bills-text text">Water </br>$55.84</p>
+				</div>
+				<div class="all-boxes-bills float-left">
+					<p class="medium-text bills-text text">Wifi </br>$62.95</p>
+				</div>
+			</div>
+			<footer class="text medium-text">Me te wai korari</footer>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
